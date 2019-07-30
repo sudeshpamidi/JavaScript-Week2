@@ -1,4 +1,4 @@
-//Discription: this is scripts for lab execises for dates
+//Description: this is scripts for lab execises for dates
 //Author: Sudesh
 
 

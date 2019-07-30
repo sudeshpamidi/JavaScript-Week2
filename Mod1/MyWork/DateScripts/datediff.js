@@ -1,3 +1,6 @@
+//Description: this is scripts for lab execises for dates to find out the date differences
+//Author: Sudesh pamidi
+
 let milliSec = Date.parse("May 1, 2019");
 
 
