@@ -20,10 +20,32 @@ function parsepartCode(partCode) {
 
 }
 
+
+/* calling for single string*/
+let part1 = parsepartCode("ABL:234325-S");
+
+console.log("Supplier : " + part1.supplierCode +
+    " Product Number  : " + part1.productNumber +
+    " Size : " + part1.size);
+console.log("-------------------------");
+
+
+
+/* Calling the function for array of strings*/
 var partCodeArray = ["XYZ:1234-L", "ABL:234325-S", "ACB:2345-XL", "ABC:1234567-M"];
 
 for (let i = 0; i < partCodeArray.length - 1; i++) {
     let part1 = parsepartCode(partCodeArray[i]);
+
+    console.log("Supplier : " + part1.supplierCode +
+        " Product Number  : " + part1.productNumber +
+        " Size : " + part1.size);
+    console.log("-------------------------");
+}
+
+/******** Another Way of calling **************/
+for (let code in partCodeArray) {
+    let part1 = parsepartCode(code);
 
     console.log("Supplier : " + part1.supplierCode +
         " Product Number  : " + part1.productNumber +
