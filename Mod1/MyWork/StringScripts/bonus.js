@@ -7,7 +7,6 @@ let prefixStrings = "Mrs.|Mrs,|Mrs|Mr.|Mr,|Mr|Miss.|Miss,|Miss|Dr.|Dr,|Dr";
 
 var arrayPrefix = prefixStrings.split("|");
 
-
 function getPrefix(largeName) {
 
     for (let i = 0; i < arrayPrefix.length; i++) {
