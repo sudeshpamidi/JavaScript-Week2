@@ -19,14 +19,15 @@ function getPrefix(largeName) {
     return "";
 }
 
+//extract the sufix from the name
 function getSufix(largeName) {
     let pos = largeName.lastIndexOf(",");
     let sufix = (pos != -1 ? largeName.substring(pos, largeName.length) : "");
     return sufix;
 }
 
+//
 function getFullNameBetweenPrefixSufix(largeName, prefix, sufix) {
-
     let pos1 = (prefix == "" ? 0 : prefix.length); //prefix position
     let pos2 = (sufix == "" ? largeName.length : largeName.lastIndexOf(sufix));
 
