@@ -2,8 +2,10 @@
 //Author: Sudesh Pamidi
 "use strict"
 
-//let name = "Brenda Lynn Grace";
 
+
+//This function displays first name, middle name and  last name for given fullname
+//@param(string)    fullname 
 function parseAndDisplayName(fullname) {
 
     let firstName = "",
@@ -26,15 +28,13 @@ function parseAndDisplayName(fullname) {
         firstName = fullname;
         lastName = "";
     }
-
-
     console.log("First Name: " + firstName);
 
     if (middleName != "")
         console.log("Middle Name: " + middleName);
     if (lastName != "")
         console.log("Last Name: " + lastName);
-}
+};
 
 parseAndDisplayName("Cher");
 parseAndDisplayName("Lan Auston");
