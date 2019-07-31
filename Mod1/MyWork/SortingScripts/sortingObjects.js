@@ -1,4 +1,4 @@
-//Description: This script is lab execises for substring, substr and slice
+//Description: This script is lab execises for sorting array of objects by pricem item name asc and desc.
 //Author: Sudesh Pamidi
 "use strict"
 
