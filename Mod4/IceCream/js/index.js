@@ -25,17 +25,16 @@ window.onload = function() {
         let topping = 0.0;
 
         if (hotFudge.checked) {
-            topping += 1.25; //hotFudge.value;
+            topping += parseFloat(hotFudge.value);
         }
 
         if (sprinkle.checked) {
-            topping += 0.25; //sprinkle.value;
+            topping += parseFloat(sprinkle.value);
         }
 
         if (whipCream.checked) {
-            topping += 0.75; //whipCream.value;
+            topping += parseFloat(whipCream.value);
         }
-
         let totoal = parseFloat(noOdScoops.value) + topping;
         return totoal;
     }

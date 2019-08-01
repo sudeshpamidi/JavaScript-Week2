@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Rent A Car</title>
+</head>
+
+<body>
+    <!--header -->
+    <header>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+
+        <!-- <div class="jumbotron"> 
+        <div class="container text-center">
+            <h1>Car Rental</h1>
+            <p class="lead">Rent A Car
+            </p>
+        </div>
+               </div>
+-->
+    </header>
+    <!--End header -->
+    <main>
+        <div class="container-fluid mt-5">
+            <!--Begining of row-->
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <form class="bordered-box mb-2" id="frmicecream" action="#" method="GET">
+
+                        <div class="text-center">
+                            <img src="images/car-rental.png" class="bd-placeholder-img image-sm" alt="saving">
+                            <h2>Rent A Car</h2>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pickupDate" class="col-sm-6 col-form-label">Pickup Date:</label>
+                            <div class="col-sm-6">
+                                <div class="input-group mb-1">
+                                    <input type="date" class="form-control" placeholder="Pick Date" id="pickupDate" name="pickupDate" aria-label="Pick Date" aria-describedby="button-addon1" value="2019-08-05">
+                                    <!--
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropoffDate" class="col-sm-6 col-form-label">Dropoff Date:</label>
+                            <div class="col-sm-6">
+                                <div class="input-group mb-1">
+                                    <input type="date" class="form-control" placeholder="Dropoff Date" id="dropoffDate" name="dropoffDate" aria-label="Pick Date" aria-describedby="button-addon1" value="2019-08-09">
+                                    <!--
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                                        </div>
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="noOfDays" class="col-sm-6 col-form-label">Number of Days:</label>
+                            <div class="col-sm-6">
+                                <div class="input-group mb-1">
+                                    <input type="text" class="form-control" placeholder="Number of Days" id="noOfDays" name="noOfDays" aria-label="Number of Days" aria-describedby="button-addon2" value="1">
+                                    <!--
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                                        </div>
+                                        -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="carType" class="col-sm-6 col-form-label">Car Type:</label>
+                            <div class="col-sm-6">
+                                <select id="carType" name="carType">
+                                        <option value="eco">Economy</option>
+                                        <option value="comp">Compact</option>
+                                        <option value="intm">Intermediate</option>                                    
+                                        <option value="fsize">Full Size</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <fieldset>
+                                    <legend>Options</legend>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="electronicToll" name="electronicToll" value="3.95">
+                                        <label class="custom-control-label" for="electronicToll">Electonic Toll Tag($3.95)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="gps" name="gps" value="2.95">
+                                        <label class="custom-control-label" for="gps">GPS ($2.95)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="roadSideAssist" name="roadSideAssist" value="2.95">
+                                        <label class="custom-control-label" for="roadSideAssist">Roadside Assistance ($2.95)</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="form-check form-check-inline">
+                                    <p class="form-check-label mr-4"> Under 25?</p>
+                                    <div class="custom-control custom-radio mr-3">
+                                        <input type="radio" id="under25No" name="under25" class="custom-control-input" value="false" checked>
+                                        <label class="custom-control-label" for="under25No">No</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="under25Yes" name="under25" class="custom-control-input" value="true">
+                                        <label class="custom-control-label" for="under25Yes">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>
+                            <a class="btn text-white btn-success" id="estimate" role="button">Esimate the Total Coast</a>
+                            <button type="reset" class="btn btn-success" id="reset">Reset</button>
+                        </p>
+                    </form>
+                    <div class="result-box text-xl text-center" id="results"> Lalal
+                    </div>
+                </div>
+            </div>
+            <!-- end of row -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Company 2017-2019</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js">
+    </script>
+</body>
+
+</html>
