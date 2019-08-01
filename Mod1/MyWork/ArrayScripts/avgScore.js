@@ -30,13 +30,10 @@ function getMedian(scores) {
     scores = scores.sort();
     if ((scores.length) % 2 == 0) {
         let average = (scores[Math.round(scores.length / 2)] + scores[Math.round(scores.length / 2) - 1]) / 2
-
         console.log(average);
-
     } else {
         console.log(scores[Math.floor(scores.length / 2)]);
-    }
-
+    };
 }
 
 console.log('Average score through function calling: ' + getAverage(scores).toFixed(2));
